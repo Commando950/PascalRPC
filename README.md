@@ -1,20 +1,12 @@
 # What Is PascalRPC?
 PascalRPC is a Discord Rich Presence program with a Graphical User Interface written in Pascal. With it you can easily set custom statuses on Discord. With the Graphical User Interface you are easily able to navigate and change settings without fiddling with files, awkward command line programs, or code itself.
 
-To download Discord or learn more about Discord RPC visit the links below. These are only for the curious and knowledge and understanding of it is not totally required, but helpful to understand what this application does.
+To download Discord or learn more about Discord RPC visit the links below. These are only for the curious and you probably already know about both.
 
 Discord: <https://discordapp.com/>  
 Discord RPC: <https://discordapp.com/rich-presence>
 
-Images:
-
-![Image](https://github.com/Commando950/PascalRPC/raw/master/example.png "An example in action.")
-
-*The image above demonstrates what rich presence looks like in use.*
-
-![Image](https://github.com/Commando950/PascalRPC/raw/master/PascalRPC.png "The program interface.")
-
-*The image above shows the program and its interface.*
+Check the images section at the very end to get a look at the program and its interface.
 
 # How To Use
 It is recommended to get an already compiled build from [releases]https://github.com/Commando950/PascalRPC/releases to begin using this program as an end user. If you wish to compile this program read the Compiling section.
@@ -44,3 +36,15 @@ Be sure if you redistribute this that you include the .DLL file as the program w
 
 # Licensing
 Read [LICENSE](../blob/master/LICENSE) for more information.
+
+# Images
+
+Images:
+
+![Image](https://github.com/Commando950/PascalRPC/raw/master/example.png "An example in action.")
+
+*The image above demonstrates what rich presence looks like in use.*
+
+![Image](https://github.com/Commando950/PascalRPC/raw/master/PascalRPC.png "The program interface.")
+
+*The image above shows the program and its interface.*
