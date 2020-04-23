@@ -39,8 +39,6 @@ Read [LICENSE](../blob/master/LICENSE) for more information.
 
 # Images
 
-Images:
-
 ![Image](https://github.com/Commando950/PascalRPC/raw/master/example.png "An example in action.")
 
 *The image above demonstrates what rich presence looks like in use.*
