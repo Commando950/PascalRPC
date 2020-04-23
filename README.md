@@ -11,7 +11,7 @@ Check the images section at the very end to get a look at the program and its in
 # How To Use
 It is recommended to get an already compiled build from [releases](https://github.com/Commando950/PascalRPC/releases) to begin using this program as an end user. If you wish to compile this program read the Compiling section.
 
-1. Create an application to use at the title of your status.   
+1. Create an application to use as the title of your status.   
    Go to [Discord Applications](https://discordapp.com/developers/applications) and create a new application.  
    Go to Rich Presence>Art Assets to add any art you would like to display on your status.  
    Before you leave be sure to get the Client ID.
@@ -22,7 +22,7 @@ It is recommended to get an already compiled build from [releases](https://githu
 To change the application you are using be sure to click Shutdown RPC and then enable it again.
 
 # Compiling
-NOTICE: Will only correctly work and compile on 64 bit. I do not currently know why, but it is unlikely an issue for most users.
+NOTICE: Will only correctly work and compile on 64 bit. I do not currently know why, but it is unlikely an issue for most users. This was also made with Windows in mind, so it may need some tweaking to work elsewhere.
 
 To compile you need [Lazarus](https://www.lazarus-ide.org/) to either modify or compile this project.
 
