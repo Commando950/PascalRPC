@@ -6,6 +6,7 @@ Discord: <https://discordapp.com/>
 Discord RPC: <https://discordapp.com/rich-presence>
 
 Example:
+
 ![alt text](https://github.com/Commando950/PascalRPC/raw/master/example.png "An example in action.")
 *The image above demonstrates what rich presence looks like in use.*
 
