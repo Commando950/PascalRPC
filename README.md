@@ -8,11 +8,11 @@ Discord RPC: <https://discordapp.com/rich-presence>
 
 Images:
 
-![alt text](https://github.com/Commando950/PascalRPC/raw/master/example.png "An example in action.")
+![Image](https://github.com/Commando950/PascalRPC/raw/master/example.png "An example in action.")
 
 *The image above demonstrates what rich presence looks like in use.*
 
-![alt text](https://github.com/Commando950/PascalRPC/raw/master/PascalRPC.png "The program interface.")
+![Image](https://github.com/Commando950/PascalRPC/raw/master/PascalRPC.png "The program interface.")
 
 *The image above shows the program and its interface.*
 
