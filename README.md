@@ -11,7 +11,7 @@ Example:
 
 *The image above demonstrates what rich presence looks like in use.*
 
-#How To Use
+# How To Use
 It is recommended to get an already compiled build from [releases]: https://github.com/Commando950/PascalRPC/releases to begin using this program as an end user. If you wish to compile this program read the Compiling section.
 
 1. Create an application to use at the title of your status. 
@@ -24,7 +24,7 @@ It is recommended to get an already compiled build from [releases]: https://gith
 
 To change the application you are using be sure to click Shutdown RPC and then enable it again.
 
-#Compiling
+# Compiling
 NOTICE: Will only correctly work and compile on 64 bit. I do not currently know why, but it is unlikely an issue for most users.
 
 To compile you need [Lazarus]: https://www.lazarus-ide.org/ to either modify or compile this project.
@@ -37,5 +37,5 @@ This application also requires a [64 bit .DLL]: https://github.com/discord/disco
 
 Be sure if you redistribute this that you include the .DLL file as the program will not work without it.
 
-#Licensing
+# Licensing
 Read [LICENSE](../blob/master/LICENSE) for more information.
