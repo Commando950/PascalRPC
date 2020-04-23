@@ -4,6 +4,7 @@ PascalRPC is a Discord Rich Presence program with a Graphical User Interface wri
 To download Discord or learn more about Discord RPC visit the links below. These are only for the curious and knowledge and understanding of it is not totally required, but helpful to understand what this application does.
 
 Discord: <https://discordapp.com/>
+
 Discord RPC: <https://discordapp.com/rich-presence>
 
 Example:
@@ -16,9 +17,9 @@ Example:
 It is recommended to get an already compiled build from [releases]https://github.com/Commando950/PascalRPC/releases to begin using this program as an end user. If you wish to compile this program read the Compiling section.
 
 1. Create an application to use at the title of your status. 
-...Go to [Discord Applications]https://discordapp.com/developers/applications and create a new application.
-...Go to Rich Presence>Art Assets to add any art you would like to display on your status.
-...Before you leave be sure to get the Client ID.
+   Go to [Discord Applications]https://discordapp.com/developers/applications and create a new application.
+   Go to Rich Presence>Art Assets to add any art you would like to display on your status.
+   Before you leave be sure to get the Client ID.
 2. Open PascalRPC and type in the Application ID box the Client ID you retrieved earlier.
 3. Set desired settings.
 4. Click Enable RPC.
