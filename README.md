@@ -39,10 +39,10 @@ Read [LICENSE](../blob/master/LICENSE) for more information.
 
 # Images
 
-![Image](https://github.com/Commando950/PascalRPC/raw/master/example.png "An example in action.")
+![Image](https://github.com/Commando950/PascalRPC/raw/master/images/example.png "An example in action.")
 
 *The image above demonstrates what rich presence looks like in use.*
 
-![Image](https://github.com/Commando950/PascalRPC/raw/master/PascalRPC.png "The program interface.")
+![Image](https://github.com/Commando950/PascalRPC/raw/master/images/PascalRPC.png "The program interface.")
 
 *The image above shows the program and its interface.*
