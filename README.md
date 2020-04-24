@@ -35,7 +35,7 @@ This application also requires a [64 bit .DLL](https://github.com/discord/discor
 Be sure if you redistribute this that you include the .DLL file as the program will not work without it.
 
 # Licensing
-Read [LICENSE](../blob/master/LICENSE) for more information.
+Read [LICENSE](../master/LICENSE) for more information.
 
 # Images
 
