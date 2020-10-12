@@ -5,29 +5,32 @@ unit DiscordRPC;
 interface
 
 type
+
   DiscordRichPresence = packed record
-    state: String;
-    details: String;
+    state: AnsiString;
+    details: AnsiString;
     startTimestamp: Int64;
     endTimestamp: Int64;
-    largeImageKey: String;
-    largeImageText: String;
-    smallImageKey: String;
-    smallImageText: String;
-    partyId: String;
-    partySize: longint;
-    partyMax: longint;
-    matchSecret: String;
-    joinSecret: String;
-    spectateSecret: String;
-    instance: shortint;
+    largeImageKey: AnsiString;
+    largeImageText: AnsiString;
+    smallImageKey: AnsiString;
+    smallImageText: AnsiString;
+    partyId: AnsiString;
+    partySize: Integer;
+    partyMax: Integer;
+    matchSecret: AnsiString;
+    joinSecret: AnsiString;
+    spectateSecret: AnsiString;
+    instance: Shortint;
   end;
 
+  PTRDiscordRichPresence = ^DiscordRichPresence;
+
   DiscordUser = packed record
-    userID: String;
-    username: String;
-    discriminator: String;
-    avatar: String;
+    userID: AnsiString;
+    username: AnsiString;
+    discriminator: AnsiString;
+    avatar: AnsiString;
   end;
 
   DiscordEventHandlers = packed record
@@ -38,25 +41,75 @@ type
     spectateGame: pointer;
     joinRequest: pointer;
   end;
-
-procedure Discord_Initialize(applicationId: String;
-  EventHandlers: DiscordEventHandlers; autoRegister: longint); cdecl;
-  external 'discord-rpc.dll';
-procedure Discord_Initialize(applicationId: String;
-  EventHandlers: Pointer; autoRegister: longint); cdecl;
-  external 'discord-rpc.dll';
-procedure Discord_Initialize(applicationId: String;
-  EventHandlers: DiscordEventHandlers; autoRegister: longint;optionalSteamId:PChar); cdecl;
-  external 'discord-rpc.dll';
-procedure Discord_Shutdown(); cdecl; external 'discord-rpc.dll';
-procedure Discord_UpdateConnection(); cdecl; external 'discord-rpc.dll';
-procedure Discord_UpdatePresence(PresenceData: DiscordRichPresence);
-  cdecl; external 'discord-rpc.dll';
-procedure Discord_ClearPresence(); cdecl; external 'discord-rpc.dll';
-procedure Discord_Respond(userid: String; reply: longint);
-  cdecl; external 'discord-rpc.dll';
-procedure Discord_UpdateHandlers(EventHandlers: DiscordEventHandlers);
-  cdecl; external 'discord-rpc.dll';
+{$IFDEF CPU64}
+  {$IFDEF Windows}
+    procedure Discord_Initialize(applicationId: AnsiString;
+      EventHandlers: DiscordEventHandlers; autoRegister: longint); cdecl;
+      external 'discord-rpc.dll';
+    procedure Discord_Initialize(applicationId: AnsiString;
+      EventHandlers: Pointer; autoRegister: longint); cdecl;
+      external 'discord-rpc.dll';
+    procedure Discord_Initialize(applicationId: AnsiString;
+      EventHandlers: DiscordEventHandlers; autoRegister: longint;optionalSteamId:AnsiString); cdecl;
+      external 'discord-rpc.dll';
+    procedure Discord_Shutdown(); cdecl; external 'discord-rpc.dll';
+    procedure Discord_UpdateConnection(); cdecl; external 'discord-rpc.dll';
+    procedure Discord_UpdatePresence(PresenceData: PTRDiscordRichPresence);
+      cdecl; external 'discord-rpc.dll';
+    procedure Discord_ClearPresence(); cdecl; external 'discord-rpc.dll';
+    procedure Discord_Respond(userid: AnsiString; reply: longint);
+      cdecl; external 'discord-rpc.dll';
+    procedure Discord_UpdateHandlers(EventHandlers: DiscordEventHandlers);
+      cdecl; external 'discord-rpc.dll';
+  {$ENDIF}
+  {$IFDEF Linux}
+    procedure Discord_Initialize(applicationId: AnsiString;
+      EventHandlers: DiscordEventHandlers; autoRegister: longint); cdecl;
+      external 'libdiscord-rpc.so';
+    procedure Discord_Initialize(applicationId: AnsiString;
+      EventHandlers: Pointer; autoRegister: longint); cdecl;
+      external 'libdiscord-rpc.so';
+    procedure Discord_Initialize(applicationId: AnsiString;
+      EventHandlers: DiscordEventHandlers; autoRegister: longint;optionalSteamId:AnsiString); cdecl;
+      external 'libdiscord-rpc.so';
+    procedure Discord_Shutdown(); cdecl; external 'libdiscord-rpc.so';
+    procedure Discord_UpdateConnection(); cdecl; external 'libdiscord-rpc.so';
+    procedure Discord_UpdatePresence(PresenceData: PTRDiscordRichPresence);
+      cdecl; external 'libdiscord-rpc.so';
+    procedure Discord_ClearPresence(); cdecl; external 'libdiscord-rpc.so';
+    procedure Discord_Respond(userid: AnsiString; reply: longint);
+      cdecl; external 'libdiscord-rpc.so';
+    procedure Discord_UpdateHandlers(EventHandlers: DiscordEventHandlers);
+      cdecl; external 'libdiscord-rpc.so';
+  {$ENDIF}
+  {$IFDEF UNIX}
+    {$error Unix compilation not yet supported! Can you help add this?}
+  {$ENDIF}
+{$ENDIF}
+{$IFDEF CPU32}
+  {$IFDEF Windows}
+    procedure Discord_Initialize(applicationId: AnsiString;
+      EventHandlers: DiscordEventHandlers; autoRegister: longint); cdecl;
+      external 'discord-rpc32.dll';
+    procedure Discord_Initialize(applicationId: AnsiString;
+      EventHandlers: Pointer; autoRegister: longint); cdecl;
+      external 'discord-rpc32.dll';
+    procedure Discord_Initialize(applicationId: AnsiString;
+      EventHandlers: DiscordEventHandlers; autoRegister: longint;optionalSteamId:AnsiString); cdecl;
+      external 'discord-rpc32.dll';
+    procedure Discord_Shutdown(); cdecl; external 'discord-rpc32.dll';
+    procedure Discord_UpdateConnection(); cdecl; external 'discord-rpc32.dll';
+    procedure Discord_UpdatePresence(PresenceData: PTRDiscordRichPresence);
+      cdecl; external 'discord-rpc32.dll';
+    procedure Discord_ClearPresence(); cdecl; external 'discord-rpc32.dll';
+    procedure Discord_Respond(userid: AnsiString; reply: longint);
+      cdecl; external 'discord-rpc32.dll';
+    procedure Discord_UpdateHandlers(EventHandlers: DiscordEventHandlers);
+      cdecl; external 'discord-rpc32.dll';
+  {$ELSE}
+    {$error 32 Bit compilation not yet supported on systems other than Windows!}
+  {$ENDIF}
+{$ENDIF}
 
 const
   DISCORD_REPLY_NO = 0;

@@ -3,14 +3,14 @@
   <ProjectSession>
     <PathDelim Value="\"/>
     <Version Value="11"/>
-    <BuildModes Active="Default"/>
-    <Units Count="6">
+    <BuildModes Active="32 Bit Windows"/>
+    <Units Count="7">
       <Unit0>
         <Filename Value="PascalRPC.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos Y="19"/>
-        <UsageCount Value="45"/>
+        <UsageCount Value="54"/>
       </Unit0>
       <Unit1>
         <Filename Value="main.pas"/>
@@ -19,19 +19,18 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Main"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="333"/>
-        <CursorPos X="46" Y="347"/>
-        <UsageCount Value="45"/>
+        <TopLine Value="385"/>
+        <CursorPos X="53" Y="405"/>
+        <UsageCount Value="54"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="DiscordRPC.pas"/>
-        <TopLine Value="33"/>
-        <CursorPos X="48" Y="49"/>
-        <UsageCount Value="22"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="40"/>
+        <CursorPos X="28" Y="54"/>
+        <UsageCount Value="26"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
@@ -39,14 +38,14 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="10"/>
         <CursorPos X="72" Y="46"/>
-        <UsageCount Value="14"/>
+        <UsageCount Value="13"/>
       </Unit3>
       <Unit4>
         <Filename Value="C:\lazarus\fpc\3.0.4\source\rtl\inc\systemh.inc"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="94"/>
-        <CursorPos X="3" Y="406"/>
-        <UsageCount Value="8"/>
+        <TopLine Value="332"/>
+        <CursorPos X="14" Y="335"/>
+        <UsageCount Value="10"/>
       </Unit4>
       <Unit5>
         <Filename Value="C:\lazarus\fpc\3.0.4\source\packages\fcl-base\src\inifiles.pp"/>
@@ -54,130 +53,133 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="119"/>
         <CursorPos X="15" Y="219"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="10"/>
       </Unit5>
+      <Unit6>
+        <Filename Value="C:\lazarus\components\lazutils\fpcadds.pas"/>
+        <UnitName Value="FPCAdds"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="40" Y="9"/>
+        <UsageCount Value="9"/>
+      </Unit6>
     </Units>
-    <JumpHistory Count="30" HistoryIndex="29">
+    <JumpHistory Count="29" HistoryIndex="28">
       <Position1>
         <Filename Value="main.pas"/>
-        <Caret Line="107" Column="6" TopLine="85"/>
+        <Caret Line="399" Column="48" TopLine="375"/>
       </Position1>
       <Position2>
         <Filename Value="main.pas"/>
-        <Caret Line="108" Column="6" TopLine="86"/>
+        <Caret Line="402" Column="65" TopLine="387"/>
       </Position2>
       <Position3>
         <Filename Value="main.pas"/>
-        <Caret Line="137" Column="53" TopLine="121"/>
+        <Caret Line="345" Column="36" TopLine="330"/>
       </Position3>
       <Position4>
         <Filename Value="main.pas"/>
-        <Caret Line="139" Column="49" TopLine="124"/>
+        <Caret Line="354" Column="43" TopLine="348"/>
       </Position4>
       <Position5>
-        <Filename Value="main.pas"/>
-        <Caret Line="142" Column="93" TopLine="124"/>
+        <Filename Value="DiscordRPC.pas"/>
+        <Caret Line="34" Column="33" TopLine="8"/>
       </Position5>
       <Position6>
-        <Filename Value="DiscordRPC.pas"/>
-        <Caret Line="9" Column="18"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="402" Column="44" TopLine="370"/>
       </Position6>
       <Position7>
-        <Filename Value="main.pas"/>
-        <Caret Line="472" Column="65" TopLine="237"/>
+        <Filename Value="DiscordRPC.pas"/>
+        <Caret Line="97" Column="33" TopLine="46"/>
       </Position7>
       <Position8>
         <Filename Value="DiscordRPC.pas"/>
-        <Caret Line="15" Column="31"/>
+        <Caret Line="10" Column="13"/>
       </Position8>
       <Position9>
-        <Filename Value="main.pas"/>
-        <Caret Line="343" Column="49" TopLine="328"/>
+        <Filename Value="DiscordRPC.pas"/>
+        <Caret Line="12" Column="28"/>
       </Position9>
       <Position10>
-        <Filename Value="main.pas"/>
-        <Caret Line="351" Column="29" TopLine="332"/>
+        <Filename Value="DiscordRPC.pas"/>
+        <Caret Line="8" Column="11"/>
       </Position10>
       <Position11>
-        <Filename Value="main.pas"/>
-        <Caret Line="350" Column="59" TopLine="335"/>
+        <Filename Value="DiscordRPC.pas"/>
+        <Caret Line="15" Column="27"/>
       </Position11>
       <Position12>
-        <Filename Value="main.pas"/>
-        <Caret Line="383" Column="58" TopLine="367"/>
+        <Filename Value="DiscordRPC.pas"/>
+        <Caret Line="8" Column="8"/>
       </Position12>
       <Position13>
-        <Filename Value="main.pas"/>
-        <Caret Line="388" Column="36" TopLine="367"/>
+        <Filename Value="DiscordRPC.pas"/>
+        <Caret Line="22" Column="23"/>
       </Position13>
       <Position14>
-        <Filename Value="main.pas"/>
-        <Caret Line="386" Column="29" TopLine="367"/>
+        <Filename Value="DiscordRPC.pas"/>
+        <Caret Line="8" Column="9"/>
       </Position14>
       <Position15>
-        <Filename Value="main.pas"/>
-        <Caret Line="387" Column="10" TopLine="367"/>
+        <Filename Value="DiscordRPC.pas"/>
+        <Caret Line="15" Column="26"/>
       </Position15>
       <Position16>
         <Filename Value="main.pas"/>
-        <Caret Line="386" Column="22" TopLine="367"/>
+        <Caret Line="344" Column="30" TopLine="331"/>
       </Position16>
       <Position17>
-        <Filename Value="main.pas"/>
-        <Caret Line="383" Column="7" TopLine="367"/>
+        <Filename Value="DiscordRPC.pas"/>
+        <Caret Line="13" Column="28" TopLine="4"/>
       </Position17>
       <Position18>
         <Filename Value="main.pas"/>
-        <Caret Line="386" Column="24" TopLine="370"/>
+        <Caret Line="346" TopLine="332"/>
       </Position18>
       <Position19>
-        <Filename Value="DiscordRPC.pas"/>
-        <Caret Line="47" Column="27" TopLine="31"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="345" TopLine="332"/>
       </Position19>
       <Position20>
-        <Filename Value="DiscordRPC.pas"/>
-        <Caret Line="44" Column="24" TopLine="31"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="346" TopLine="332"/>
       </Position20>
       <Position21>
-        <Filename Value="DiscordRPC.pas"/>
-        <Caret Line="64" Column="42" TopLine="38"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="349" Column="46"/>
       </Position21>
       <Position22>
         <Filename Value="DiscordRPC.pas"/>
-        <Caret Line="11" Column="31"/>
+        <Caret Line="89" Column="6" TopLine="74"/>
       </Position22>
       <Position23>
-        <Filename Value="DiscordRPC.pas"/>
-        <Caret Line="9" Column="17"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="344" Column="23" TopLine="330"/>
       </Position23>
       <Position24>
-        <Filename Value="DiscordRPC.pas"/>
-        <Caret Line="22" Column="43"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="391" Column="49" TopLine="171"/>
       </Position24>
       <Position25>
-        <Filename Value="main.pas"/>
-        <Caret Line="344" Column="24" TopLine="328"/>
+        <Filename Value="DiscordRPC.pas"/>
+        <Caret Line="89" Column="5" TopLine="77"/>
       </Position25>
       <Position26>
-        <Filename Value="DiscordRPC.pas"/>
-        <Caret Line="22" Column="26"/>
+        <Filename Value="main.pas"/>
+        <Caret Line="391" Column="38" TopLine="370"/>
       </Position26>
       <Position27>
-        <Filename Value="main.pas"/>
-        <Caret Line="350" Column="28" TopLine="334"/>
+        <Filename Value="DiscordRPC.pas"/>
+        <Caret Line="27" Column="27" TopLine="12"/>
       </Position27>
       <Position28>
-        <Filename Value="main.pas"/>
-        <Caret Line="351" Column="27" TopLine="335"/>
+        <Filename Value="DiscordRPC.pas"/>
+        <Caret Line="109" Column="43" TopLine="91"/>
       </Position28>
       <Position29>
         <Filename Value="main.pas"/>
-        <Caret Line="350" Column="41" TopLine="331"/>
+        <Caret Line="393" Column="52" TopLine="374"/>
       </Position29>
-      <Position30>
-        <Filename Value="main.pas"/>
-        <Caret Line="347" Column="45" TopLine="331"/>
-      </Position30>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

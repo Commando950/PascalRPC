@@ -340,54 +340,57 @@ end;
 procedure UpdateRPC();
 var
   PresenceData: DiscordRPC.DiscordRichPresence;
+  PTRPresenceData: DiscordRPC.PTRDiscordRichPresence;
 begin
-  if Length(RPCForm.state.Text) = 1 then
-    PresenceData.state := RPCForm.state.Text + ' '
-  else
-    PresenceData.state := RPCForm.state.Text;
-  if Length(RPCForm.details.Text) = 1 then
-    PresenceData.details := RPCForm.details.Text + ' '
-  else
-    PresenceData.details := RPCForm.details.Text;
-  PresenceData.smallImageKey := RPCForm.smallImageKey.Text;
-  PresenceData.largeImageKey := RPCForm.largeImageKey.Text;
-  PresenceData.smallImageText := RPCForm.smallImageText.Text;
-  PresenceData.largeImageText := RPCForm.largeImageText.Text;
-  PresenceData.partySize := StrToInt(RPCForm.partySize.Text);
-  PresenceData.partyMax := StrToInt(RPCForm.partyMax.Text);
-  //Don't show time.
-  if RPCForm.timeIndex.ItemIndex = 0 then
-  begin
-    PresenceData.startTimestamp := 0;
-    PresenceData.endTimeStamp := 0;
+  with PresenceData do begin
+    if Length(RPCForm.state.Text) = 0 then
+      state := ' '
+    else
+      state := RPCForm.state.Text;
+    if Length(RPCForm.details.Text) = 0 then
+      details := ' '
+    else
+      details := RPCForm.details.Text;
+    smallImageKey := RPCForm.smallImageKey.Text;
+    largeImageKey := RPCForm.largeImageKey.Text;
+    smallImageText := RPCForm.smallImageText.Text;
+    largeImageText := RPCForm.largeImageText.Text;
+    partySize := StrToInt(RPCForm.partySize.Text);
+    partyMax := StrToInt(RPCForm.partyMax.Text);
+    //Don't show time.
+    if RPCForm.timeIndex.ItemIndex = 0 then
+    begin
+      startTimestamp := 0;
+      endTimeStamp := 0;
+    end;
+    //Use the current time.
+    if RPCForm.timeIndex.ItemIndex = 1 then
+    begin
+      startTimestamp := DateTimeToUnix(LocalTimeToUniversal(Now() - Time()));
+      endTimeStamp := 0;
+    end;
+    //Set a timer from now.
+    if RPCForm.timeIndex.ItemIndex = 2 then
+    begin
+      startTimestamp := 0;
+      endTimeStamp := DateTimeToUnix(LocalTimeToUniversal(Now())) +
+        StrToInt(RPCForm.endTime.Text);
+    end;
+    //Set the exact time yourself.
+    if RPCForm.timeIndex.ItemIndex = 3 then
+    begin
+      startTimestamp := StrToInt(RPCForm.startTime.Text);
+      endTimeStamp := StrToInt(RPCForm.endTime.Text);
+    end;
+    //Start counting up from the current time.
+    if RPCForm.timeIndex.ItemIndex = 4 then
+    begin
+      startTimestamp := DateTimeToUnix(LocalTimeToUniversal(Now()));
+      endTimeStamp := 0;
+    end;
   end;
-  //Use the current time.
-  if RPCForm.timeIndex.ItemIndex = 1 then
-  begin
-    PresenceData.startTimestamp := DateTimeToUnix(LocalTimeToUniversal(Now() - Time()));
-    PresenceData.endTimeStamp := 0;
-  end;
-  //Set a timer from now.
-  if RPCForm.timeIndex.ItemIndex = 2 then
-  begin
-    PresenceData.startTimestamp := 0;
-    PresenceData.endTimeStamp := DateTimeToUnix(LocalTimeToUniversal(Now())) +
-      StrToInt(RPCForm.endTime.Text);
-  end;
-  //Set the exact time yourself.
-  if RPCForm.timeIndex.ItemIndex = 3 then
-  begin
-    PresenceData.startTimestamp := StrToInt(RPCForm.startTime.Text);
-    PresenceData.endTimeStamp := StrToInt(RPCForm.endTime.Text);
-  end;
-  DiscordRPC.Discord_UpdatePresence(PresenceData);
-  //Start counting up from the current time.
-  if RPCForm.timeIndex.ItemIndex = 4 then
-  begin
-    PresenceData.startTimestamp := DateTimeToUnix(LocalTimeToUniversal(Now()));
-    PresenceData.endTimeStamp := 0;
-  end;
-  DiscordRPC.Discord_UpdatePresence(PresenceData);
+  PTRPresenceData := @PresenceData;
+  DiscordRPC.Discord_UpdatePresence(PTRPresenceData);
 end;
 
 procedure TRPCForm.EnableRPCClick(Sender: TObject);
