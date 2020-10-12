@@ -3,14 +3,14 @@
   <ProjectSession>
     <PathDelim Value="\"/>
     <Version Value="11"/>
-    <BuildModes Active="32 Bit Windows"/>
+    <BuildModes Active="Default"/>
     <Units Count="7">
       <Unit0>
         <Filename Value="PascalRPC.lpr"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos Y="19"/>
-        <UsageCount Value="54"/>
+        <UsageCount Value="55"/>
       </Unit0>
       <Unit1>
         <Filename Value="main.pas"/>
@@ -19,18 +19,19 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="Main"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="385"/>
+        <TopLine Value="390"/>
         <CursorPos X="53" Y="405"/>
-        <UsageCount Value="54"/>
+        <UsageCount Value="55"/>
         <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="DiscordRPC.pas"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="40"/>
-        <CursorPos X="28" Y="54"/>
-        <UsageCount Value="26"/>
+        <TopLine Value="66"/>
+        <CursorPos X="78" Y="68"/>
+        <UsageCount Value="27"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
@@ -183,7 +184,9 @@
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
-      <Modes Count="0" ActiveMode=""/>
+      <Modes Count="1" ActiveMode="default">
+        <Mode0 Name="default"/>
+      </Modes>
     </RunParams>
   </ProjectSession>
 </CONFIG>

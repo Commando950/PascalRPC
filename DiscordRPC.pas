@@ -81,9 +81,8 @@ type
       cdecl; external 'libdiscord-rpc.so';
     procedure Discord_UpdateHandlers(EventHandlers: DiscordEventHandlers);
       cdecl; external 'libdiscord-rpc.so';
-  {$ENDIF}
-  {$IFDEF UNIX}
-    {$error Unix compilation not yet supported! Can you help add this?}
+  {$ELSE}
+    {$error Compilation not yet supported! Can you help add this?}
   {$ENDIF}
 {$ENDIF}
 {$IFDEF CPU32}

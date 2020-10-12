@@ -22,17 +22,17 @@ It is recommended to get an already compiled build from [releases](https://githu
 To change the application you are using be sure to click Shutdown RPC and then enable it again.
 
 # Compiling
-NOTICE: Will only correctly work and compile on 64 bit. I do not currently know why, but it is unlikely an issue for most users. This was also made with Windows in mind, so it may need some tweaking to work elsewhere.
+NOTICE: Will work correctly on Windows 32 and 64 bit as well as 64 bit Linux. You may need to compile it in order to get it to work on your system.
 
 To compile you need [Lazarus](https://www.lazarus-ide.org/) to either modify or compile this project.
 
-This application also requires a [64 bit .DLL](https://github.com/discord/discord-rpc) to function. It is included in this repository due to the fact it was released under the MIT License, so I have no fear of redistributing it.
+This application also requires a [.DLL or .SO](https://github.com/discord/discord-rpc) to function. These are included in this repository due to the fact it was released under the MIT License, so I have no fear of redistributing it.
 
 1. Open the PascalRPC.lpi project file using Lazarus.
 2. Run>Build
 3. Profit??!!
 
-Be sure if you redistribute this that you include the .DLL file as the program will not work without it.
+Be sure if you redistribute this that you include the .DLL or .SO file as the program will not work without it.
 
 # Licensing
 Read [LICENSE](../master/LICENSE) for more information.

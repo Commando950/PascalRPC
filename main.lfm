@@ -1,10 +1,10 @@
 object RPCForm: TRPCForm
-  Left = 425
-  Height = 480
-  Top = 289
+  Left = 372
+  Height = 499
+  Top = 191
   Width = 640
   Caption = 'PascalRPC'
-  ClientHeight = 460
+  ClientHeight = 472
   ClientWidth = 640
   Constraints.MinHeight = 480
   Constraints.MinWidth = 640
@@ -149,23 +149,21 @@ object RPCForm: TRPCForm
   OnClose = FormClose
   OnCreate = FormCreate
   OnWindowStateChange = FormWindowStateChange
-  LCLVersion = '2.0.6.0'
+  LCLVersion = '2.0.10.0'
   object ProfileBox: TGroupBox
-    AnchorSideLeft.Control = Owner
-    AnchorSideTop.Control = Owner
-    AnchorSideRight.Control = Owner
-    AnchorSideRight.Side = asrBottom
     Left = 8
-    Height = 56
+    Height = 64
     Top = 2
     Width = 624
-    Anchors = [akTop, akLeft, akRight]
+    Align = alTop
     BorderSpacing.Left = 8
     BorderSpacing.Top = 2
     BorderSpacing.Right = 8
     Caption = 'PascalRPC'
-    ClientHeight = 36
-    ClientWidth = 620
+    ClientHeight = 45
+    ClientWidth = 622
+    Font.Height = -13
+    ParentFont = False
     ParentShowHint = False
     ShowHint = True
     TabOrder = 4
@@ -174,7 +172,7 @@ object RPCForm: TRPCForm
       AnchorSideBottom.Control = ProfileBox
       AnchorSideBottom.Side = asrBottom
       Left = 4
-      Height = 32
+      Height = 41
       Top = 2
       Width = 148
       Anchors = [akTop, akLeft, akBottom]
@@ -189,7 +187,7 @@ object RPCForm: TRPCForm
       AnchorSideBottom.Control = ProfileBox
       AnchorSideBottom.Side = asrBottom
       Left = 153
-      Height = 32
+      Height = 41
       Top = 2
       Width = 148
       Anchors = [akTop, akLeft, akBottom]
@@ -205,7 +203,7 @@ object RPCForm: TRPCForm
       AnchorSideBottom.Control = ProfileBox
       AnchorSideBottom.Side = asrBottom
       Left = 320
-      Height = 32
+      Height = 41
       Top = 2
       Width = 148
       Anchors = [akTop, akLeft, akBottom]
@@ -220,7 +218,7 @@ object RPCForm: TRPCForm
       AnchorSideBottom.Control = ProfileBox
       AnchorSideBottom.Side = asrBottom
       Left = 469
-      Height = 32
+      Height = 41
       Top = 2
       Width = 148
       Anchors = [akTop, akLeft, akBottom]
@@ -232,32 +230,28 @@ object RPCForm: TRPCForm
     end
   end
   object AppBox: TGroupBox
-    AnchorSideLeft.Control = Owner
-    AnchorSideTop.Control = ProfileBox
-    AnchorSideTop.Side = asrBottom
-    AnchorSideRight.Control = Owner
-    AnchorSideRight.Side = asrBottom
     Left = 8
-    Height = 64
+    Height = 68
     Hint = 'To use this application you need to enter a valid ID.'#13#10'To get this ID create an application and get the Client ID.'#13#10'Create an application at: https://discordapp.com/developers/applications/'
     Top = 66
     Width = 624
-    Anchors = [akTop, akLeft, akRight]
+    Align = alTop
     BorderSpacing.Left = 8
-    BorderSpacing.Top = 8
     BorderSpacing.Right = 8
     Caption = 'RPC Application'
-    ClientHeight = 44
-    ClientWidth = 620
+    ClientHeight = 49
+    ClientWidth = 622
+    Font.Height = -13
+    ParentFont = False
     ParentShowHint = False
     ShowHint = True
     TabOrder = 3
     object ApplicationID: TLabeledEdit
       Left = 4
-      Height = 23
+      Height = 30
       Top = 15
       Width = 297
-      EditLabel.Height = 15
+      EditLabel.Height = 16
       EditLabel.Hint = 'To use this application you need to enter a valid ID.'#13#10'To get this ID create an application and get the Client ID.'#13#10'Create an application at: https://discordapp.com/developers/applications/'
       EditLabel.Width = 297
       EditLabel.Caption = 'Application ID'
@@ -268,30 +262,26 @@ object RPCForm: TRPCForm
     end
   end
   object StatusBox: TGroupBox
-    AnchorSideLeft.Control = Owner
-    AnchorSideTop.Control = AppBox
-    AnchorSideTop.Side = asrBottom
-    AnchorSideRight.Control = Owner
-    AnchorSideRight.Side = asrBottom
     Left = 8
-    Height = 64
+    Height = 70
     Hint = 'What you are doing right now.'#13#10'Status is above details when displayed.'
-    Top = 138
+    Top = 134
     Width = 624
-    Anchors = [akTop, akLeft, akRight]
+    Align = alTop
     BorderSpacing.Left = 8
-    BorderSpacing.Top = 8
     BorderSpacing.Right = 8
     Caption = 'Status'
-    ClientHeight = 44
-    ClientWidth = 620
+    ClientHeight = 51
+    ClientWidth = 622
+    Font.Height = -13
+    ParentFont = False
     TabOrder = 1
     object state: TLabeledEdit
       Left = 4
-      Height = 23
+      Height = 30
       Top = 16
       Width = 297
-      EditLabel.Height = 15
+      EditLabel.Height = 16
       EditLabel.Hint = 'The uppermost part of your status. What you are doing now.'
       EditLabel.Width = 297
       EditLabel.Caption = 'State'
@@ -301,10 +291,10 @@ object RPCForm: TRPCForm
     end
     object details: TLabeledEdit
       Left = 320
-      Height = 23
+      Height = 30
       Top = 16
       Width = 297
-      EditLabel.Height = 15
+      EditLabel.Height = 16
       EditLabel.Hint = 'Details about your status.'
       EditLabel.Width = 297
       EditLabel.Caption = 'Details'
@@ -314,32 +304,28 @@ object RPCForm: TRPCForm
     end
   end
   object ImageBox: TGroupBox
-    AnchorSideLeft.Control = Owner
-    AnchorSideTop.Control = StatusBox
-    AnchorSideTop.Side = asrBottom
-    AnchorSideRight.Control = Owner
-    AnchorSideRight.Side = asrBottom
     Left = 8
-    Height = 112
+    Height = 118
     Hint = 'Status images appear to the left of your current status. '#13#10'One large image and a small image in a circle on the large image. '#13#10'Each can have text set to it when hovered over.'#13#10'You create these on the Discord applications page.'#13#10'https://discordapp.com/developers/applications/'
-    Top = 210
+    Top = 204
     Width = 624
-    Anchors = [akTop, akLeft, akRight]
+    Align = alTop
     BorderSpacing.Left = 8
-    BorderSpacing.Top = 8
     BorderSpacing.Right = 8
     Caption = 'Status Image'
-    ClientHeight = 92
-    ClientWidth = 620
+    ClientHeight = 99
+    ClientWidth = 622
+    Font.Height = -13
+    ParentFont = False
     ParentShowHint = False
     ShowHint = True
     TabOrder = 0
     object smallImageKey: TLabeledEdit
       Left = 4
-      Height = 23
+      Height = 30
       Top = 64
       Width = 297
-      EditLabel.Height = 15
+      EditLabel.Height = 16
       EditLabel.Hint = 'A small circular image next to the large status image.'#13#10'These can be created and found on the Discord applications page.'#13#10'https://discordapp.com/developers/applications/'
       EditLabel.Width = 297
       EditLabel.Caption = 'Small Image Key'
@@ -350,10 +336,10 @@ object RPCForm: TRPCForm
     end
     object largeImageKey: TLabeledEdit
       Left = 4
-      Height = 23
+      Height = 30
       Top = 16
       Width = 297
-      EditLabel.Height = 15
+      EditLabel.Height = 16
       EditLabel.Hint = 'The large image to the left of your current status.'#13#10'These can be created and found on the Discord applications page.'#13#10'https://discordapp.com/developers/applications/'
       EditLabel.Width = 297
       EditLabel.Caption = 'Large Image Key'
@@ -364,10 +350,10 @@ object RPCForm: TRPCForm
     end
     object smallImageText: TLabeledEdit
       Left = 320
-      Height = 23
+      Height = 30
       Top = 64
       Width = 297
-      EditLabel.Height = 15
+      EditLabel.Height = 16
       EditLabel.Hint = 'Text when you hover over the small status image.'
       EditLabel.Width = 297
       EditLabel.Caption = 'Small Image Text'
@@ -378,10 +364,10 @@ object RPCForm: TRPCForm
     end
     object largeImageText: TLabeledEdit
       Left = 320
-      Height = 23
+      Height = 30
       Top = 16
       Width = 297
-      EditLabel.Height = 15
+      EditLabel.Height = 16
       EditLabel.Hint = 'Text that appears when you hover over the large image.'
       EditLabel.Width = 297
       EditLabel.Caption = 'Large Image Text'
@@ -392,32 +378,28 @@ object RPCForm: TRPCForm
     end
   end
   object PartyInfo: TGroupBox
-    AnchorSideLeft.Control = Owner
-    AnchorSideTop.Control = ImageBox
-    AnchorSideTop.Side = asrBottom
-    AnchorSideRight.Control = Owner
-    AnchorSideRight.Side = asrBottom
     Left = 8
-    Height = 64
+    Height = 70
     Hint = 'Information about your hypothetical party.'#13#10'Includes how many people is in it already and its max size.'
-    Top = 330
+    Top = 322
     Width = 624
-    Anchors = [akTop, akLeft, akRight]
+    Align = alTop
     BorderSpacing.Left = 8
-    BorderSpacing.Top = 8
     BorderSpacing.Right = 8
     Caption = 'Party Information'
-    ClientHeight = 44
-    ClientWidth = 620
+    ClientHeight = 51
+    ClientWidth = 622
+    Font.Height = -13
+    ParentFont = False
     ParentShowHint = False
     ShowHint = True
     TabOrder = 2
     object partySize: TLabeledEdit
       Left = 4
-      Height = 23
+      Height = 30
       Top = 16
       Width = 297
-      EditLabel.Height = 15
+      EditLabel.Height = 16
       EditLabel.Hint = 'How many hypothetical members are in your party?'
       EditLabel.Width = 297
       EditLabel.Caption = 'Party Size'
@@ -432,10 +414,10 @@ object RPCForm: TRPCForm
     end
     object partyMax: TLabeledEdit
       Left = 320
-      Height = 23
+      Height = 30
       Top = 16
       Width = 297
-      EditLabel.Height = 15
+      EditLabel.Height = 16
       EditLabel.Hint = 'How many party members can you hold?'
       EditLabel.Width = 297
       EditLabel.Caption = 'Party Max'
@@ -449,37 +431,37 @@ object RPCForm: TRPCForm
     end
   end
   object Time: TGroupBox
-    AnchorSideLeft.Control = Owner
-    AnchorSideTop.Control = PartyInfo
-    AnchorSideTop.Side = asrBottom
-    AnchorSideRight.Control = Owner
-    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Side = asrBottom
     Left = 8
-    Height = 56
+    Height = 72
     Hint = 'PascalRPC offers a few ways to set your time.'#13#10'Discord offers both time elapsed and time remaining.'
-    Top = 402
+    Top = 392
     Width = 624
-    Anchors = [akTop, akLeft, akRight]
+    Align = alTop
     BorderSpacing.Left = 8
-    BorderSpacing.Top = 8
     BorderSpacing.Right = 8
     Caption = 'Time Settings'
-    ClientHeight = 36
-    ClientWidth = 620
+    ClientHeight = 53
+    ClientWidth = 622
+    Font.Height = -13
+    ParentFont = False
     TabOrder = 5
     object startTime: TLabeledEdit
       Left = 320
-      Height = 23
-      Top = 10
+      Height = 30
+      Top = 16
       Width = 148
-      EditLabel.Height = 15
+      EditLabel.Height = 14
       EditLabel.Hint = 'Time elapsed in epoch seconds.'
       EditLabel.Width = 148
       EditLabel.Caption = 'Start Time(Epoch Seconds)'
       EditLabel.ParentColor = False
+      EditLabel.ParentFont = False
+      EditLabel.Font.Height = 11
       EditLabel.Layout = tlBottom
       Enabled = False
       MaxLength = 40
+      ParentFont = False
       ParentShowHint = False
       TabOrder = 0
       Text = '0'
@@ -488,14 +470,16 @@ object RPCForm: TRPCForm
     end
     object endTime: TLabeledEdit
       Left = 469
-      Height = 23
-      Top = 10
+      Height = 30
+      Top = 16
       Width = 148
-      EditLabel.Height = 15
+      EditLabel.Height = 14
       EditLabel.Hint = 'Time remaining in epoch seconds.'
       EditLabel.Width = 148
       EditLabel.Caption = 'End Time(Epoch Seconds)'
       EditLabel.ParentColor = False
+      EditLabel.ParentFont = False
+      EditLabel.Font.Height = 11
       EditLabel.Layout = tlBottom
       Enabled = False
       MaxLength = 40
@@ -507,10 +491,10 @@ object RPCForm: TRPCForm
     end
     object timeIndex: TComboBox
       Left = 4
-      Height = 23
-      Top = 10
+      Height = 30
+      Top = 16
       Width = 297
-      ItemHeight = 15
+      ItemHeight = 0
       ItemIndex = 0
       Items.Strings = (
         'Don''t Show Time'
@@ -527,14 +511,12 @@ object RPCForm: TRPCForm
   object OpenINI: TOpenDialog
     Title = 'Open Profile'
     Filter = 'PascalRPC Profile|*.rpcpro'
-    left = 360
-    top = 64
+    Left = 448
   end
   object SaveINI: TSaveDialog
     Title = 'Save Profile'
     Filter = 'PascalRPC Profile|*.rpcpro'
-    left = 408
-    top = 64
+    Left = 480
   end
   object TrayIcon: TTrayIcon
     BalloonFlags = bfInfo
@@ -680,12 +662,10 @@ object RPCForm: TRPCForm
     }
     Visible = True
     OnClick = TrayIconClick
-    left = 476
-    top = 106
+    Left = 520
   end
   object TrayMenu: TPopupMenu
-    left = 528
-    top = 104
+    Left = 560
     object TrayMenuOpen: TMenuItem
       Caption = 'Open'
       OnClick = TrayMenuOpenClick
@@ -696,8 +676,7 @@ object RPCForm: TRPCForm
     end
   end
   object MainMenu1: TMainMenu
-    left = 368
-    top = 112
+    Left = 600
     object MenuProfiles: TMenuItem
       Caption = 'Profiles'
       object MenuLoadProfile: TMenuItem
