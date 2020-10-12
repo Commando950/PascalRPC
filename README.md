@@ -24,7 +24,7 @@ To change the application you are using be sure to click Shutdown RPC and then e
 # Compiling
 NOTICE: Will work correctly on Windows 32 and 64 bit as well as 64 bit Linux. You may need to compile it in order to get it to work on your system.
 
-To compile you need [Lazarus](https://www.lazarus-ide.org/) to either modify or compile this project.
+You need [Lazarus](https://www.lazarus-ide.org/) to either modify or compile this project yourself.
 
 This application also requires a [.DLL or .SO](https://github.com/discord/discord-rpc) to function. These are included in this repository due to the fact it was released under the MIT License, so I have no fear of redistributing it.
 

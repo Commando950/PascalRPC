@@ -61,28 +61,29 @@ type
       cdecl; external 'discord-rpc.dll';
     procedure Discord_UpdateHandlers(EventHandlers: DiscordEventHandlers);
       cdecl; external 'discord-rpc.dll';
-  {$ENDIF}
-  {$IFDEF Linux}
-    procedure Discord_Initialize(applicationId: AnsiString;
-      EventHandlers: DiscordEventHandlers; autoRegister: longint); cdecl;
-      external 'libdiscord-rpc.so';
-    procedure Discord_Initialize(applicationId: AnsiString;
-      EventHandlers: Pointer; autoRegister: longint); cdecl;
-      external 'libdiscord-rpc.so';
-    procedure Discord_Initialize(applicationId: AnsiString;
-      EventHandlers: DiscordEventHandlers; autoRegister: longint;optionalSteamId:AnsiString); cdecl;
-      external 'libdiscord-rpc.so';
-    procedure Discord_Shutdown(); cdecl; external 'libdiscord-rpc.so';
-    procedure Discord_UpdateConnection(); cdecl; external 'libdiscord-rpc.so';
-    procedure Discord_UpdatePresence(PresenceData: PTRDiscordRichPresence);
-      cdecl; external 'libdiscord-rpc.so';
-    procedure Discord_ClearPresence(); cdecl; external 'libdiscord-rpc.so';
-    procedure Discord_Respond(userid: AnsiString; reply: longint);
-      cdecl; external 'libdiscord-rpc.so';
-    procedure Discord_UpdateHandlers(EventHandlers: DiscordEventHandlers);
-      cdecl; external 'libdiscord-rpc.so';
   {$ELSE}
-    {$error Compilation not yet supported! Can you help add this?}
+    {$IFDEF Linux}
+      procedure Discord_Initialize(applicationId: AnsiString;
+        EventHandlers: DiscordEventHandlers; autoRegister: longint); cdecl;
+        external 'libdiscord-rpc.so';
+      procedure Discord_Initialize(applicationId: AnsiString;
+        EventHandlers: Pointer; autoRegister: longint); cdecl;
+        external 'libdiscord-rpc.so';
+      procedure Discord_Initialize(applicationId: AnsiString;
+        EventHandlers: DiscordEventHandlers; autoRegister: longint;optionalSteamId:AnsiString); cdecl;
+        external 'libdiscord-rpc.so';
+      procedure Discord_Shutdown(); cdecl; external 'libdiscord-rpc.so';
+      procedure Discord_UpdateConnection(); cdecl; external 'libdiscord-rpc.so';
+      procedure Discord_UpdatePresence(PresenceData: PTRDiscordRichPresence);
+        cdecl; external 'libdiscord-rpc.so';
+      procedure Discord_ClearPresence(); cdecl; external 'libdiscord-rpc.so';
+      procedure Discord_Respond(userid: AnsiString; reply: longint);
+        cdecl; external 'libdiscord-rpc.so';
+      procedure Discord_UpdateHandlers(EventHandlers: DiscordEventHandlers);
+        cdecl; external 'libdiscord-rpc.so';
+    {$ELSE}
+      {$error Compilation not yet supported! Can you help add this?}
+    {$ENDIF}
   {$ENDIF}
 {$ENDIF}
 {$IFDEF CPU32}

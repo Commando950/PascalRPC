@@ -83,7 +83,7 @@ type
 var
   RPCForm: TRPCForm;
   RPCActive: boolean = False;
-  Version: String = '0.61';
+  Version: String = '0.7';
 
 implementation
 
